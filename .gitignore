@@ -106,3 +106,5 @@ dist
 /.idea/
 /game/client/.npmrc
 /game/static/
+
+.batou.npm.success
