@@ -1,4 +1,5 @@
 const HTTPS_PORT = process.env.PORT || 8443;
+const HTTPS_BIND = process.env.BIND || '0.0.0.0';
 
 const key = process.env.HTTP_TLS_KEY || 'key.pem';
 const cert = process.env.HTTP_TLS_CERTIFICATE || 'cert.pem';
@@ -47,7 +48,7 @@ const handleRequest = function (request, response) {
 };
 
 const httpsServer = http.createServer(serverConfig, handleRequest);
-httpsServer.listen(HTTPS_PORT, '0.0.0.0');
+httpsServer.listen(HTTPS_PORT, HTTPS_BIND);
 
 // ----------------------------------------------------------------------------------------
 
