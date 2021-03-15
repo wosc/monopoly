@@ -3,7 +3,6 @@ import Board from "./Board";
 
 import {gameService} from "./services/GameService";
 import Logs from "./Logs";
-import Video from "./Video";
 import Players from './Players';
 import SelectPlayerDialog from "./SelectPlayerDialog";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -90,7 +89,6 @@ export default class App extends React.Component {
                 <div className="game">
                     <Board game={this.state.game}/>
                     <Logs logs={this.state.logs}/>
-                    <Video game={this.state.game} chat={this.state.chat}/>
                     <Players game={this.state.game}/>
                 </div>
                 {this.state.showHelp && <HelpDialog dismiss={this.hideHelp}/>}
