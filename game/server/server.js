@@ -1,6 +1,8 @@
 const HTTPS_PORT = process.env.PORT || 8443;
 const HTTPS_BIND = process.env.BIND || '0.0.0.0';
 
+const VHOST_PATH = process.env.VHOST_PATH ? new RegExp('^' + process.env.VHOST_PATH) : null;
+
 const key = process.env.HTTP_TLS_KEY || 'key.pem';
 const cert = process.env.HTTP_TLS_CERTIFICATE || 'cert.pem';
 const https = process.env.HTTP !== "true";
@@ -25,6 +27,9 @@ const serverConfig = https ? {
 
 // Create a server for the client html page
 const handleRequest = function (request, response) {
+    if (VHOST_PATH) {
+        request.url = request.url.replace(VHOST_PATH, '');
+    }
     // Render the single client html file for any request the HTTP server receives
     console.log('request received: ' + request.url);
 
