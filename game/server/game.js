@@ -722,6 +722,9 @@ class GameService {
             case 'loadGame':
                 this.loadGame(params.game, player);
                 break;
+            case 'resetGame':
+                this.resetGame(player);
+                break;
             case 'chat':
                 this.addToChat(params.message, player);
                 break;
@@ -786,6 +789,14 @@ class GameService {
         this.game = {...this.newGame(), ...game.game};
         this.logs = game.logs || [];
         this.chat = game.chat || [];
+        this.ws.broadcast(JSON.stringify({type: 'newGame', game: this.game}));
+    }
+
+    resetGame = (player) => {
+        this.sendLog(player.name + ' is creating a new game');
+        this.game = this.newGame();
+        this.logs = [];
+        this.chat = [];
         this.ws.broadcast(JSON.stringify({type: 'newGame', game: this.game}));
     }
 

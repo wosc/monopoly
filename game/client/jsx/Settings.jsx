@@ -62,10 +62,16 @@ export default class Settings extends React.Component {
         }
     }
 
+    resetGame = () => {
+        gameService.resetGame();
+        this.setState({showSettings: false});
+    }
+
     render() {
         return (<div className="game-settings">
             <FontAwesomeIcon icon={faCog} onClick={e => this.setState({showSettings: !this.state.showSettings})}/>
             {this.state.showSettings && <ul>
+                <li onClick={this.resetGame}>New game</li>
                 <li onClick={this.saveGame}>Save game</li>
                 <li onClick={this.loadGame}>Load game</li>
                 <li onClick={this.props.showHelp}>Show help dialog</li>

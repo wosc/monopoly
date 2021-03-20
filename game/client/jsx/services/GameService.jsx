@@ -106,6 +106,10 @@ class GameService {
         this.sendToWs('loadGame', {game: game});
     }
 
+    resetGame = (game) => {
+        this.sendToWs('resetGame', {});
+    }
+
     sendToWs = (command, object) => {
         this.ws.send(JSON.stringify({type: 'game', command: command, params: object, from: this.currentPlayer}));
     }
