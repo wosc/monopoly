@@ -6,7 +6,7 @@ export default class IncomeTax extends React.Component{
 
     render() {
         return (<div className={"super-tax board-card grid-area-"+this.props.position+" " + this.props.boardPos}>
-            <div className="title">Income Tax</div>
+            <div className="title">CREDIT LIMIT EXCEEDED</div>
             <div className="icon">
                 <FontAwesomeIcon icon={faMoneyBillWaveAlt} />
             </div>

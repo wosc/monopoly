@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faInbox} from "@fortawesome/free-solid-svg-icons";
+import {faAnchor} from "@fortawesome/free-solid-svg-icons";
 
 export default class Community extends React.Component {
 
@@ -8,7 +8,7 @@ export default class Community extends React.Component {
         return (<div className={"community board-card grid-area-" + this.props.position + " " + this.props.boardPos}>
             <div className="title">Community</div>
             <div className="icon body">
-                <FontAwesomeIcon icon={faInbox}/>
+                <FontAwesomeIcon icon={faAnchor}/>
             </div>
         </div>);
     }

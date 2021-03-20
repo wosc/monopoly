@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHome, faHotel, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {faBed, faDharmachakra, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {gameService} from "./services/GameService";
 import Mortgage from "./Mortgage";
 
@@ -44,11 +44,11 @@ export default class Street extends React.Component {
         const houses = [];
         if (street.houses > 0) {
             for (let i = 0; i < street.houses; i++) {
-                houses.push(<div className="house" key={i}><FontAwesomeIcon icon={faHome}/></div>)
+                houses.push(<div className="house" key={i}><FontAwesomeIcon icon={faBed}/></div>)
             }
         } else if (street.hotel > 0) {
             for (let i = 0; i < street.hotel; i++) {
-                houses.push(<div className="hotel" key={i}><FontAwesomeIcon icon={faHotel}/></div>)
+                houses.push(<div className="hotel" key={i}><FontAwesomeIcon icon={faDharmachakra}/></div>)
             }
         }
         const opened = this.state.opened;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {gameService} from "./services/GameService";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTimesCircle, faTrain} from "@fortawesome/free-solid-svg-icons";
+import {faTimesCircle, faGlassCheers, faCocktail, faGlassMartiniAlt, faBeer} from "@fortawesome/free-solid-svg-icons";
 import Mortgage from "./Mortgage";
 
 export default class TrainStation extends React.Component {
@@ -33,6 +33,12 @@ export default class TrainStation extends React.Component {
         }
 
         const mortgageClass = station.mortgaged ? " mortgaged":"";
+        const icon = {
+            'ANYTIME BAR': faGlassCheers,
+            'CREW BAR': faGlassMartiniAlt,
+            'DECK 5': faBeer,
+            'DECK 6': faCocktail
+        }[station.title];
 
         return (<div className={"train-station board-card grid-area-"+this.props.position+" " + this.props.boardPos + " " + (opened ? "opened" : "")+mortgageClass}
                      onClick={() => this.setState({opened: true})}>
@@ -42,7 +48,7 @@ export default class TrainStation extends React.Component {
             }}><FontAwesomeIcon icon={faTimesCircle}/></a>}
             <div className="title">{station.title}</div>
             <div className="icon">
-                <FontAwesomeIcon icon={faTrain}/>
+                <FontAwesomeIcon icon={icon}/>
             </div>
             {opened && <div className="body">
                 {Object.keys(station.rent).map(k => <div key={k}>{k}:&nbsp;{station.rent[k]}</div>)}

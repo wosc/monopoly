@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHandPaper} from '@fortawesome/free-solid-svg-icons';
+import {faHandPointer} from '@fortawesome/free-solid-svg-icons';
 
 export default class GoToJail extends React.Component {
 
@@ -9,9 +9,9 @@ export default class GoToJail extends React.Component {
             <div className="container">
                 <div>Go To</div>
                 <div className="icon">
-                    <FontAwesomeIcon icon={faHandPaper}/>
+                    <FontAwesomeIcon icon={faHandPointer}/>
                 </div>
-                <div>Jail</div>
+                <div>Isolation</div>
             </div>
         </div>);
     }
