@@ -149,7 +149,7 @@ export default class Board extends React.Component {
                     <Street position="37" boardPos="right" game={game}/>
                     <SuperTax position="38" boardPos="right"/>
                     <Street position="39" boardPos="right" game={game}/>
-                    <div style={{gridArea: 'e'}}></div>
+                    <div className="board-logo" style={{gridArea: 'e'}}></div>
                 </div>
             </div>)
         } else {
