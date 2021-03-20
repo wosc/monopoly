@@ -87,11 +87,11 @@ export default class Street extends React.Component {
                     {opened && canBuyHouse && <div className="housing">
                         <hr />
                         <div>
-                            Houses: <button onClick={this.removeHouse}>-</button> {street.houses} /
+                            Single-Share: <button onClick={this.removeHouse}>-</button> {street.houses} /
                             4 <button onClick={this.addHouse}>+</button>
                         </div>
                         {(street.houses === 4 || street.hotel === 1) && <div>
-                            Hotel: <button onClick={this.removeHotel}>-</button> {street.hotel} / 1 <button
+                            Officer Cabin: <button onClick={this.removeHotel}>-</button> {street.hotel} / 1 <button
                             onClick={this.addHotel}>+</button>
                         </div>}
                     </div>}

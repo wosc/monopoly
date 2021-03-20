@@ -55,8 +55,8 @@ class GameService {
                     {
                         position: 12,
                         owner: "1",
-                        title: "Electric Company",
-                        type: "electricity",
+                        title: "GARBAGE AREA",
+                        type: "garbage",
                         description: "If one Utility is owned, rent is 4 times the amount shown on dice. If both Utilities are owned rent is 10 times amount shown on dice.",
                         price: 150,
                         mortgaged: false
@@ -64,8 +64,8 @@ class GameService {
                     {
                         position: 28,
                         owner: "1",
-                        type: "water",
-                        title: "Water works",
+                        type: "laundry",
+                        title: "MAIN LAUNDRY",
                         description: "If one Utility is owned, rent is 4 times the amount shown on dice. If both Utilities are owned rent is 10 times amount shown on dice.",
                         price: 150,
                         mortgaged: false
@@ -75,7 +75,7 @@ class GameService {
                     {
                         position: 5,
                         owner: "1",
-                        title: "King's Cross Station",
+                        title: "DECK 6",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -88,7 +88,7 @@ class GameService {
                     {
                         position: 15,
                         owner: "1",
-                        title: "Marylebone Station",
+                        title: "DECK 5",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -101,7 +101,7 @@ class GameService {
                     {
                         position: 25,
                         owner: "1",
-                        title: "Fenchurch St. Station",
+                        title: "ANYTIME BAR",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -114,7 +114,7 @@ class GameService {
                     {
                         position: 35,
                         owner: "1",
-                        title: "Liverpool St. Station",
+                        title: "CREW BAR",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -129,20 +129,20 @@ class GameService {
                     {
                         position: 37,
                         owner: "1",
-                        title: "Park Lane",
+                        title: "HOSPITAL ROAD",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$35",
                             "With colour set": "$70",
-                            "With 1 House": "$175",
-                            "With 2 House": "$500",
-                            "With 3 House": "$1100",
-                            "With 4 House": "$1300",
-                            "With Hotel": "$1500",
+                            "With 1 Single-Share": "$175",
+                            "With 2 Single-Share": "$500",
+                            "With 3 Single-Share": "$1100",
+                            "With 4 Single-Share": "$1300",
+                            "With Officer Cabin": "$1500",
                         },
                         cost: {
-                            "House": "$200 each",
-                            "Hotel": "$200 each"
+                            "Single-Share": "$200 each",
+                            "Officer Cabin": "$200 each"
                         },
                         houses: 0,
                         hotel: 0,
@@ -152,22 +152,22 @@ class GameService {
                     {
                         position: 39,
                         owner: "1",
-                        title: "MayFair",
+                        title: "EVEREST ROAD",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$50",
                             "With colour set": "$100",
-                            "With 1 House": "$200",
-                            "With 2 House": "$600",
-                            "With 3 House": "$1400",
-                            "With 4 House": "$1700",
-                            "With Hotel": "$2000",
+                            "With 1 Single-Share": "$200",
+                            "With 2 Single-Share": "$600",
+                            "With 3 Single-Share": "$1400",
+                            "With 4 Single-Share": "$1700",
+                            "With Officer Cabin": "$2000",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$200 each",
-                            "Hotel": "$200 each"
+                            "Single-Share": "$200 each",
+                            "Officer Cabin": "$200 each"
                         },
                         price: 400,
                         mortgaged: false
@@ -175,22 +175,22 @@ class GameService {
                     {
                         position: 31,
                         owner: "1",
-                        title: "Regent Street",
+                        title: "MANILA ROAD FORWARD",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
                             "With colour set": "$52",
-                            "With 1 House": "$130",
-                            "With 2 House": "$390",
-                            "With 3 House": "$900",
-                            "With 4 House": "$1100",
-                            "With Hotel": "$1275",
+                            "With 1 Single-Share": "$130",
+                            "With 2 Single-Share": "$390",
+                            "With 3 Single-Share": "$900",
+                            "With 4 Single-Share": "$1100",
+                            "With Officer Cabin": "$1275",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$200 each",
-                            "Hotel": "$200 each"
+                            "Single-Share": "$200 each",
+                            "Officer Cabin": "$200 each"
                         },
                         price: 300,
                         mortgaged: false
@@ -198,22 +198,22 @@ class GameService {
                     {
                         position: 34,
                         owner: "1",
-                        title: "Bond Street",
+                        title: "MANILA ROAD AFT",
                         color: "#008e04",
                         rent: {
                             "Rent": "$28",
                             "With colour set": "$56",
-                            "With 1 House": "$150",
-                            "With 2 House": "$450",
-                            "With 3 House": "$1000",
-                            "With 4 House": "$1200",
-                            "With Hotel": "$1400",
+                            "With 1 Single-Share": "$150",
+                            "With 2 Single-Share": "$450",
+                            "With 3 Single-Share": "$1000",
+                            "With 4 Single-Share": "$1200",
+                            "With Officer Cabin": "$1400",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$200 each",
-                            "Hotel": "$200 each"
+                            "Single-Share": "$200 each",
+                            "Officer Cabin": "$200 each"
                         },
                         price: 320,
                         mortgaged: false
@@ -221,22 +221,22 @@ class GameService {
                     {
                         position: 32,
                         owner: "1",
-                        title: "Oxford Street",
+                        title: "MANILA ROAD MIDDLE",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
                             "With colour set": "$52",
-                            "With 1 House": "$130",
-                            "With 2 House": "$390",
-                            "With 3 House": "$900",
-                            "With 4 House": "$1100",
-                            "With Hotel": "$1275",
+                            "With 1 Single-Share": "$130",
+                            "With 2 Single-Share": "$390",
+                            "With 3 Single-Share": "$900",
+                            "With 4 Single-Share": "$1100",
+                            "With Officer Cabin": "$1275",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$200 each",
-                            "Hotel": "$200 each"
+                            "Single-Share": "$200 each",
+                            "Officer Cabin": "$200 each"
                         },
                         price: 300,
                         mortgaged: false
@@ -244,22 +244,22 @@ class GameService {
                     {
                         position: 26,
                         owner: "1",
-                        title: "Leicester Square",
+                        title: "PAPENBURG ROAD FORWARD",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
                             "With colour set": "$44",
-                            "With 1 House": "$110",
-                            "With 2 House": "$330",
-                            "With 3 House": "$800",
-                            "With 4 House": "$975",
-                            "With Hotel": "$1150",
+                            "With 1 Single-Share": "$110",
+                            "With 2 Single-Share": "$330",
+                            "With 3 Single-Share": "$800",
+                            "With 4 Single-Share": "$975",
+                            "With Officer Cabin": "$1150",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         price: 260,
                         mortgaged: false
@@ -267,22 +267,22 @@ class GameService {
                     {
                         position: 27,
                         owner: "1",
-                        title: "Coventry Street",
+                        title: "PAPENBURG ROAD MIDDLE",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
                             "With colour set": "$44",
-                            "With 1 House": "$110",
-                            "With 2 House": "$330",
-                            "With 3 House": "$800",
-                            "With 4 House": "$975",
-                            "With Hotel": "$1150",
+                            "With 1 Single-Share": "$110",
+                            "With 2 Single-Share": "$330",
+                            "With 3 Single-Share": "$800",
+                            "With 4 Single-Share": "$975",
+                            "With Officer Cabin": "$1150",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         price: 260,
                         mortgaged: false
@@ -290,22 +290,22 @@ class GameService {
                     {
                         position: 29,
                         owner: "1",
-                        title: "Picadilly",
+                        title: "PAPENBURG ROAD AFT",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$24",
                             "With colour set": "$48",
-                            "With 1 House": "$120",
-                            "With 2 House": "$360",
-                            "With 3 House": "$850",
-                            "With 4 House": "$1025",
-                            "With Hotel": "$1200",
+                            "With 1 Single-Share": "$120",
+                            "With 2 Single-Share": "$360",
+                            "With 3 Single-Share": "$850",
+                            "With 4 Single-Share": "$1025",
+                            "With Officer Cabin": "$1200",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         price: 280,
                         mortgaged: false
@@ -313,22 +313,22 @@ class GameService {
                     {
                         position: 23,
                         owner: "1",
-                        title: "Fleet Street",
+                        title: "INNSBRUCK ROAD",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$18",
                             "With colour set": "$36",
-                            "With 1 House": "$90",
-                            "With 2 House": "$250",
-                            "With 3 House": "$700",
-                            "With 4 House": "$875",
-                            "With Hotel": "$1050",
+                            "With 1 Single-Share": "$90",
+                            "With 2 Single-Share": "$250",
+                            "With 3 Single-Share": "$700",
+                            "With 4 Single-Share": "$875",
+                            "With Officer Cabin": "$1050",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         price: 220,
                         mortgaged: false
@@ -336,20 +336,20 @@ class GameService {
                     {
                         position: 21,
                         owner: "1",
-                        title: "Strand",
+                        title: "HAMBURG ROAD",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$18",
                             "With colour set": "$36",
-                            "With 1 House": "$90",
-                            "With 2 House": "$250",
-                            "With 3 House": "$700",
-                            "With 4 House": "$875",
-                            "With Hotel": "$1050",
+                            "With 1 Single-Share": "$90",
+                            "With 2 Single-Share": "$250",
+                            "With 3 Single-Share": "$700",
+                            "With 4 Single-Share": "$875",
+                            "With Officer Cabin": "$1050",
                         },
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         houses: 0,
                         hotel: 0,
@@ -359,275 +359,275 @@ class GameService {
                     {
                         position: 24,
                         owner: "1",
-                        title: "Trafalgar Square",
+                        title: "JAKARTA ROAD",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$20",
                             "With colour set": "$40",
-                            "With 1 House": "$100",
-                            "With 2 House": "$300",
-                            "With 3 House": "$750",
-                            "With 4 House": "$925",
-                            "With Hotel": "$1100",
+                            "With 1 Single-Share": "$100",
+                            "With 2 Single-Share": "$300",
+                            "With 3 Single-Share": "$750",
+                            "With 4 Single-Share": "$925",
+                            "With Officer Cabin": "$1100",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$150 each",
-                            "Hotel": "$150 each"
+                            "Single-Share": "$150 each",
+                            "Officer Cabin": "$150 each"
                         },
                         price: 240,
                         mortgaged: false
                     },
                     {
                         position: 16,
-                        title: "Bow Street",
+                        title: "FRANKFURT ROAD",
                         color: "#d68000",
                         owner: "1",
                         rent: {
                             "Rent": "$14",
                             "With colour set": "$28",
-                            "With 1 House": "$70",
-                            "With 2 House": "$200",
-                            "With 3 House": "$550",
-                            "With 4 House": "$750",
-                            "With Hotel": "$950",
+                            "With 1 Single-Share": "$70",
+                            "With 2 Single-Share": "$200",
+                            "With 3 Single-Share": "$550",
+                            "With 4 Single-Share": "$750",
+                            "With Officer Cabin": "$950",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 180,
                         mortgaged: false
                     },
                     {
                         position: 18,
-                        title: "Marlborough Street",
+                        title: "GENOA ROAD",
                         color: "#d68000",
                         owner: "1",
                         rent: {
                             "Rent": "$14",
                             "With colour set": "$28",
-                            "With 1 House": "$70",
-                            "With 2 House": "$200",
-                            "With 3 House": "$550",
-                            "With 4 House": "$750",
-                            "With Hotel": "$950",
+                            "With 1 Single-Share": "$70",
+                            "With 2 Single-Share": "$200",
+                            "With 3 Single-Share": "$550",
+                            "With 4 Single-Share": "$750",
+                            "With Officer Cabin": "$950",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 180,
                         mortgaged: false
                     },
                     {
                         position: 19,
-                        title: "Vine Street",
+                        title: "LONDON ROAD",
                         color: "#d68000",
                         owner: "1",
                         rent: {
                             "Rent": "$16",
                             "With colour set": "$32",
-                            "With 1 House": "$80",
-                            "With 2 House": "$220",
-                            "With 3 House": "$600",
-                            "With 4 House": "$800",
-                            "With Hotel": "$1000",
+                            "With 1 Single-Share": "$80",
+                            "With 2 Single-Share": "$220",
+                            "With 3 Single-Share": "$600",
+                            "With 4 Single-Share": "$800",
+                            "With Officer Cabin": "$1000",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 200,
                         mortgaged: false
                     },
                     {
                         position: 13,
-                        title: "WhiteHall",
+                        title: "EDINGBURGH ROAD",
                         color: "#930086",
                         owner: "1",
                         rent: {
                             "Rent": "$10",
                             "With colour set": "$20",
-                            "With 1 House": "$50",
-                            "With 2 House": "$150",
-                            "With 3 House": "$450",
-                            "With 4 House": "$625",
-                            "With Hotel": "$750",
+                            "With 1 Single-Share": "$50",
+                            "With 2 Single-Share": "$150",
+                            "With 3 Single-Share": "$450",
+                            "With 4 Single-Share": "$625",
+                            "With Officer Cabin": "$750",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 140,
                         mortgaged: false
                     },
                     {
                         position: 11,
-                        title: "Pall Mall",
+                        title: "DUBLIN ROAD",
                         color: "#930086",
                         owner: "1",
                         rent: {
                             "Rent": "$10",
                             "With colour set": "$20",
-                            "With 1 House": "$50",
-                            "With 2 House": "$150",
-                            "With 3 House": "$450",
-                            "With 4 House": "$625",
-                            "With Hotel": "$750",
+                            "With 1 Single-Share": "$50",
+                            "With 2 Single-Share": "$150",
+                            "With 3 Single-Share": "$450",
+                            "With 4 Single-Share": "$625",
+                            "With Officer Cabin": "$750",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 140,
                         mortgaged: false
                     },
                     {
                         position: 14,
-                        title: "Northumber land Avenue",
+                        title: "BERLIN ROAD",
                         color: "#930086",
                         owner: "1",
                         rent: {
                             "Rent": "$12",
                             "With colour set": "$24",
-                            "With 1 House": "$60",
-                            "With 2 House": "$180",
-                            "With 3 House": "$500",
-                            "With 4 House": "$700",
-                            "With Hotel": "$900",
+                            "With 1 Single-Share": "$60",
+                            "With 2 Single-Share": "$180",
+                            "With 3 Single-Share": "$500",
+                            "With 4 Single-Share": "$700",
+                            "With Officer Cabin": "$900",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$100 each",
-                            "Hotel": "$100 each"
+                            "Single-Share": "$100 each",
+                            "Officer Cabin": "$100 each"
                         },
                         price: 160,
                         mortgaged: false
                     },
                     {
                         position: 6,
-                        title: "The Angel, Islington",
+                        title: "BOSTON ROAD",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
                             "Rent": "$6",
                             "With colour set": "$12",
-                            "With 1 House": "$30",
-                            "With 2 House": "$90",
-                            "With 3 House": "$270",
-                            "With 4 House": "$400",
-                            "With Hotel": "$550",
+                            "With 1 Single-Share": "$30",
+                            "With 2 Single-Share": "$90",
+                            "With 3 Single-Share": "$270",
+                            "With 4 Single-Share": "$400",
+                            "With Officer Cabin": "$550",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$50 each",
-                            "Hotel": "$50 each"
+                            "Single-Share": "$50 each",
+                            "Officer Cabin": "$50 each"
                         },
                         price: 100,
                         mortgaged: false
                     },
                     {
                         position: 8,
-                        title: "Euston Road",
+                        title: "CHICAGO ROAD",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
                             "Rent": "$6",
                             "With colour set": "$12",
-                            "With 1 House": "$30",
-                            "With 2 House": "$90",
-                            "With 3 House": "$270",
-                            "With 4 House": "$400",
-                            "With Hotel": "$550",
+                            "With 1 Single-Share": "$30",
+                            "With 2 Single-Share": "$90",
+                            "With 3 Single-Share": "$270",
+                            "With 4 Single-Share": "$400",
+                            "With Officer Cabin": "$550",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$50 each",
-                            "Hotel": "$50 each"
+                            "Single-Share": "$50 each",
+                            "Officer Cabin": "$50 each"
                         },
                         price: 100,
                         mortgaged: false
                     },
                     {
                         position: 9,
-                        title: "Pentonville Road",
+                        title: "BREMEN ROAD",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
                             "Rent": "$8",
                             "With colour set": "$16",
-                            "With 1 House": "$40",
-                            "With 2 House": "$100",
-                            "With 3 House": "$300",
-                            "With 4 House": "$450",
-                            "With Hotel": "$600",
+                            "With 1 Single-Share": "$40",
+                            "With 2 Single-Share": "$100",
+                            "With 3 Single-Share": "$300",
+                            "With 4 Single-Share": "$450",
+                            "With Officer Cabin": "$600",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$50 each",
-                            "Hotel": "$50 each"
+                            "Single-Share": "$50 each",
+                            "Officer Cabin": "$50 each"
                         },
                         price: 120,
                         mortgaged: false
                     },
                     {
                         position: 1,
-                        title: "Old Kent Road",
+                        title: "ATLANTA ROAD",
                         color: "#614901",
                         owner: "1",
                         rent: {
                             "Rent": "$2",
                             "With colour set": "$4",
-                            "With 1 House": "$10",
-                            "With 2 House": "$30",
-                            "With 3 House": "$90",
-                            "With 4 House": "$160",
-                            "With Hotel": "$250",
+                            "With 1 Single-Share": "$10",
+                            "With 2 Single-Share": "$30",
+                            "With 3 Single-Share": "$90",
+                            "With 4 Single-Share": "$160",
+                            "With Officer Cabin": "$250",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$50 each",
-                            "Hotel": "$50 each"
+                            "Single-Share": "$50 each",
+                            "Officer Cabin": "$50 each"
                         },
                         price: 60,
                         mortgaged: false
                     },
                     {
                         position: 3,
-                        title: "WhiteChapel Road",
+                        title: "ROSTOCK ROAD",
                         color: "#614901",
                         owner: "1",
                         rent: {
                             "Rent": "$4",
                             "With colour set": "$8",
-                            "With 1 House": "$20",
-                            "With 2 House": "$60",
-                            "With 3 House": "$180",
-                            "With 4 House": "$320",
-                            "With Hotel": "$450",
+                            "With 1 Single-Share": "$20",
+                            "With 2 Single-Share": "$60",
+                            "With 3 Single-Share": "$180",
+                            "With 4 Single-Share": "$320",
+                            "With Officer Cabin": "$450",
                         },
                         houses: 0,
                         hotel: 0,
                         cost: {
-                            "House": "$50 each",
-                            "Hotel": "$50 each"
+                            "Single-Share": "$50 each",
+                            "Officer Cabin": "$50 each"
                         },
                         price: 60,
                         mortgaged: false
@@ -637,40 +637,43 @@ class GameService {
             cards: {
                 chance: {
                     available: shuffle([
-                        "Advance to go collect $200",
-                        "You inherit $100",
-                        "Go to Jail, Go directly to jail. Do not pass go. Do not collect $200",
-                        "Holiday fund matures, collect $100",
-                        "Income tax refund, collect $20",
-                        "School fees. Pay $50",
-                        "Hospital Fees. Pay $100",
-                        "Collect $25 consultancy fee",
+                        "You ran too fast on the ship. Pay 20$.",
+                         "G.I. Alert! - Go straight to isolation and do not collect any money from the Crew Purser.",
+                         "You missed your Induction. Pay 50$.",
+                         "You are the next Smiling Star. You get 100$.",
+                         "Go to the Crew Purser.",
+                         "You've got a tip! You get 50$.",
+                         "You found the AC card from the hotel director. You get 100$.",
+                         "Your cabinmate is leaving today. You get his/hers telephone card with a value of 10$.",
+                         "You missed the Back ob Bord Time. Pay 80$.",
+                         "You are sea sick. You need medication from the hospital. Pay 25$.",
                         OUT_OF_JAIL,
-                        "Bank error in your favour. Collect $200",
-                        "It's your birthday collect $10 from each player",
-                        "Life insurance matures. Collect $100",
-                        "From sale of stock, you get $50",
-                        "Doctor's fees. Pay $50"
+                        "You have a Manning Number change. Go back to the Crew Purser. You don't get any money.",
+                         "You've got a promotion. You get 50$.",
+                         "You need a new shower curtain. Pay 10$.",
+                         "They found your illegal tattoo studio. Pay 50$.",
+                         "You forgot the Ship Search. Pay 25$."
                     ]),
                     used: [],
                 },
                 community: {
                     available: shuffle([
                         OUT_OF_JAIL,
-                        "Go to Jail, Go directly to jail. Do not pass go. Do not collect $200",
-                        "Advance to the next station. If UNOWNED, you may buy it from the bank. If OWNED, pay the owner twice the rent to which they are otherwise entitled",
-                        "Advance to MayFair",
-                        "Advance to the next station. If UNOWNED, you may buy it from the bank. If OWNED, pay the owner twice the rent to which they are otherwise entitled",
-                        "You have been elected chairman of the board, pay each player $50",
-                        "Advance to Trafalgar Square. If you pass go collect $200",
-                        "Your building loan matures, collect $150",
-                        "Advance to go, collect $200",
-                        "Take a trip to king's cross station, if you pass go collect $200",
-                        "Speeding fine, pay $15",
-                        "Advance to the nearest utility, if UNOWNED, you may buy it from the bank. If OWNED, roll the dice and pay the owner 10 times your roll",
-                        "Make general repairs on all you property: For each house pay $25, for each hotel pay $100",
-                        "Go back 3 spaces",
-                        "Advance to Pall Mall, if you pass go collect $200"
+                        "Go to Frankfurt Road. If you pass the Crew Purser, you get 200$.",
+                         "You won Crew Bingo. You get 25$ from all your colleagues.",
+                         "You did a Side Duty as Loading Helper. You get 100$.",
+                         "You get out of G.I.-Isolation.",
+                         "Go to the Crew Purser.",
+                         "You get your money back for your last internet package. You get 20$.",
+                         "Go to Everest Road.",
+                         "Go to Everest Road.",
+                         "Go to Atlanta Road.",
+                         "Go 3 Roads back.",
+                         "Cabin Check. Pay for every Single-Share cabin 60$ and for every Officer cabin 120$.",
+                         "Drunk on duty. You didn't pass your alcohol test. Pay 50$.",
+                         "It's your birthday. You get 10$ from all of your colleagues.",
+                         "You missed your Expert Course. You have to pause for the next round.",
+                         "You got flirty with the barkeeper. You get 25$."
                     ]),
                     used: []
 
