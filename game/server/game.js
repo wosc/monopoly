@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const OUT_OF_JAIL = "Get out of jail free. This card may be kept until needed, traded or sold.";
+const OUT_OF_JAIL = "Get out of isolation. This card may be kept until needed, traded or sold.";
 
 function shuffle(array) {
     let counter = array.length;

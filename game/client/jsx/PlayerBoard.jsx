@@ -40,7 +40,7 @@ export default class PlayerBoard extends React.Component {
                 {outOfJail > 0 && <div className="out-of-jail">
                     <div className="noteStack">
                         <div className="note">
-                            Out of jail
+                            Out of isolation
                         </div>
                         <small>x{outOfJail}</small>
                     </div>
